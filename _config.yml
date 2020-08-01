@@ -7,19 +7,19 @@
 menu:
 - page: home
   url: /
-  icon:
-- page: 前端
-  url: /categories/前端/
-  icon:
-- page: 后端
-  url: /categories/后端/
-  icon:
-- page: 工具
-  url: /categories/工具/
-  icon:
+  icon: fa-home
+- page: 标签
+  url: /tags/
+  icon: fas fa-tags
+- page: 分类
+  url: /categories/
+  icon: fas fa-bookmark
+# - page: 归档
+#   url: /archives
+#   icon: fas fa-archive
 - page: 时间轴
   url: /archives/
-  icon:
+  icon: fas fa-archive
 
 ## favicon
 favicon: /favicon.ico
@@ -48,7 +48,7 @@ widgets:
 ## 搜索
 jsonContent:
   searchLocal: true
-  searchGoogle: false
+  searchGoogle: true
   posts:
     title: true
     text: true
@@ -59,31 +59,29 @@ jsonContent:
 ## 网站公告设置
 notification: |-
             <p>
-                主题下载：<a href="https://github.com/shenliyang/hexo-theme-snippet" title="fork me" target="_blank">Snippet主题</a> <br/>
-                主题使用：<a href="https://github.com/shenliyang/hexo-theme-snippet/blob/master/README.md#常见问题" title="" target="_blank">常见使用问题</a> <br/>
-                支持主题：<a href="https://github.com/shenliyang/hexo-theme-snippet/stargazers">Star一下</a>
+                GitHUB：<a href="https://github.com/eamonzzz">Star一下</a>
             </p>
 
 ## 社交设置
 social:
  - name: Github
    icon: git
-   href: //github.com/shenliyang
+   href: //github.com/eamonzzz
  - name: 邮箱
    icon: envelope-o
-   href: mailto:snippet@91h5.cc
- - name: 联系QQ
-   icon: qq
-   href: /
- - name: 微信
-   icon: weixin
-   href: /
- - name: QQ群
-   icon: users
-   href: /
- - name: RSS
-   icon: feed
-   href: /atom.xml
+   href: mailto:eamon.zhang@outlook.com
+#  - name: 联系QQ
+#    icon: qq
+#    href: /
+#  - name: 微信
+#    icon: weixin
+#    href: /
+#  - name: QQ群
+#    icon: users
+#    href: /
+#  - name: RSS
+#    icon: feed
+#    href: /atom.xml
 
 ## 文章分类设置
 cate_config:
@@ -99,7 +97,7 @@ arch_config:
 
 ## 标签云设置
 tagcloud:
-  tag3d: false
+  tag3d: true
   textColour: '#444'
   outlineMethod: 'block'
   outlineColour: '#FFDAB9'
@@ -117,7 +115,7 @@ links:
 # 主题自定义个性化配置
 
 ## 网站宣传语
-branding:
+branding: 付出不亚于任何人的努力
 
 ## 设置banner背景图片
 banner:
@@ -155,7 +153,7 @@ declaration:
   enable: true
   title: '转载声明'
   tip: |-
-      商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="" target="_blank">Snippet</a>
+      商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="" target="_blank">EamonZzz</a>
 
 ## 文章打赏
 reward:
@@ -222,8 +220,8 @@ uyan:
 
 ## 网站访客统计
 visit_counter:
-   site: false
-   page: false
+   site: true
+   page: true
 
 ## 网站访问统计分析
 
@@ -246,7 +244,7 @@ baidu_site_verification:
 baidu_push: false
 
 #网站主题配置
-since: 2017
+since: 2020
 beian: 
 robot: 'all' ### 控制搜索引擎的抓取和索引编制行为，默认为all
 version: 1.2.3
