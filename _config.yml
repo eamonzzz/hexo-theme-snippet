@@ -70,9 +70,9 @@ social:
  - name: 邮箱
    icon: envelope-o
    href: mailto:eamon.zhang@outlook.com
-#  - name: 联系QQ
-#    icon: qq
-#    href: /
+ - name: 联系QQ
+   icon: qq
+   href: tencent://message/?uin=329294892&site=EamonBlog&Menu=yes 
 #  - name: 微信
 #    icon: weixin
 #    href: /
@@ -166,8 +166,8 @@ reward:
 ## Valine评论
 valine:
    enable: true
-   appId: xOKV9J4UeQAtVkvnJC7Kq2Jn-gzGzoHsz
-   appKey: erIpQac4azoCmgfBB7Dl9maa
+   appId: w2u6YpbTvl1gjBmPi4xHBERM-gzGzoHsz
+   appKey: A8HbNjwtkMcErioEburBRVBD
    placeholder: 说点什么吧
    notify: false
    verify: true
@@ -175,16 +175,26 @@ valine:
    meta: nick,mail
    pageSize: 10
 
+### 来必力
+livere:
+  enable: false
+  livere_uid: MTAyMC8zMzA1MS85NjEz
+
+### 友言评论(服务不稳定，经常无法加载)
+uyan:
+  enable: false
+  uyan_id:
+
+### Disqus评论(需要翻墙，或者搭建代理)
+disqus:
+  enable: false
+  shortname: snippet
+  count: false
 ### 畅言评论(需要ICP备案)
 changyan:
   enable: false
   appid:
   conf:
-
-### 来必力
-livere:
-  enable: false
-  livere_uid: MTAyMC8zMzA1MS85NjEz
 
 ## Gitalk评论
 gitalk:
@@ -197,25 +207,9 @@ gitalk:
    perPage:
    distractionFreeMode: true
 
-### Disqus评论
-disqus:
-  enable: false
-  shortname: snippet
-  count: false
-
 ### gitment评论(长期不更新，不建议使用)
 gitment:
   enable: false
-  owner:
-  repo:
-  client_id:
-  client_secret:
-  perPage: 10
-
-### 友言评论(服务不稳定)
-uyan:
-  enable: false
-  uyan_id: 1966422
 
 
 ## 网站访客统计
@@ -226,7 +220,7 @@ visit_counter:
 ## 网站访问统计分析
 
 ### 网盟CNZZ统计
-cnzz_analytics: 1263868967
+cnzz_analytics:
 
 ### 百度统计
 baidu_analytics:
@@ -241,7 +235,7 @@ tencent_analytics:
 baidu_site_verification:
 
 ### 百度自动推送
-baidu_push: false
+baidu_push: true
 
 #网站主题配置
 since: 2020
